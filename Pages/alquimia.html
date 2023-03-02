@@ -4,36 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dracarnis Cursos</title>
-    <link rel="stylesheet" href="./estilos.css">
-    <link href="./Fuente/AdventPro-Bold.ttf" rel="stylesheet">
-    <link href="./Fuente/Oswald-Regular.ttf" rel="stylesheet">
-    <link href="./Fuente/Oswald-Bold.ttf" rel="stylesheet">
-    <link href="./Fuente/Oswald-Medium.ttf" rel="stylesheet">
+    <title>Dracarnis Alquimia</title>
+    <link rel="stylesheet" href="../Css/estilos.css">
+    <link href="../Fuente/AdventPro-Bold.ttf" rel="stylesheet">
+    <link href="../Fuente/Oswald-Regular.ttf" rel="stylesheet">
+    <link href="../Fuente/Oswald-Bold.ttf" rel="stylesheet">
+    <link href="../Fuente/Oswald-Medium.ttf" rel="stylesheet">
     <!-- by DANARQUIO -->
 </head>
 <body>
     
-    <header>
-        <div class="inicio">
-        <img class="hamburg" src="./Iconos/hamburger-menu-icon.svg" alt="">
-        <a href="./index.html">
-        <img class="logo1" src="./Imagenes/Dracarnis.svg" alt=""> </a>
-        </div>
-
-        <div class="menu" >
-            <a href="./tienda.html">
-        <img class="menu_img" src="./Iconos/tienda 3.svg" alt=""> </a>
-        <a href="./alquimia.html">
-        <img class="menu_img" src="./Iconos/alquimia.svg" alt=""></a>
-        <a href="./cursos.html">
-        <img class="menu_img" src="./Iconos/cursos 3.svg" alt=""></a>
-        <a href="./servicios.html">
-        <img class="menu_img" src="./Iconos/servicios 3.svg" alt=""></a>
-        <a href="./contactanos.html">
-            <img class="menu_img" src="./Iconos/contactanos.svg" alt=""></a>
-        </div>
-    </header>
+    <nav class="navegador">
+    
+        <ul class="inicio">
+            <li class="hamburg"><a href=""> 
+                <img  src="../Iconos/hamburger-menu-icon.svg" alt=""> </a></li>
+            <li class="logo1"><a href="../index.html">
+                <img  src="../Imagenes/Dracarnis.svg" alt=""> </a></li>
+            <li class="tienda"> <a href="../pages/tienda.html">
+                <img  src="../Iconos/tienda 3.svg"></a></li>
+             <li class="alquimia"><a href="../pages/alquimia.html">
+                <img  src="../Iconos/alquimia.svg"></a></li>
+             <li class="cursos"><a href="../pages/cursos.html">
+                <img  src="../Iconos/cursos 3.svg"></a></li>
+             <li class="servicios"> <a href="#">
+                <img  src="../Iconos/servicios 3.svg"></a></li> 
+             <li class="contactanos"> <a href="../pages/contactanos.html">
+                <img  src="../Iconos/contactanos.svg"></a></li>
+        </ul>
+        </nav>
     
     <main class="main2">
         <section class="pestañas">
@@ -42,13 +41,12 @@
             <a  href="./tienda.html"><h3 class="card_text" >TIENDA</h3></a>
             </div>
     
-            <div class="card">
-
+            <div class="cardtiendadoble">
+                <img class="cardtienda_image2" src="./Iconos/alquimia.svg" alt="TIENDA">
             <a href="./alquimia.html"><h3 class="card_text" >ALQUIMIA</h3></a>
             </div>
     
-            <div class="cardtiendadoble">
-            <img class="cardtienda_image2" src="./Iconos/alquimia.svg" alt="TIENDA">
+            <div class="card">
             <a href="./cursos.html"><h3 class="card_text" >CURSOS</h3></a>
             </div>
     
@@ -88,26 +86,22 @@
 <hr>
 
 
-<section class="curso">
+<section class="blog">
 
-    <div class="cuadrocurso">
-    <img class="curso__image" src="./Imagenes/charcuteria.jpg" alt="Charcuteria">
-    <h2 class="curso__titulo">Charcuteria</h2>
-    <h5 class="productos__cantidad">40hr</h5>
-    <h5 class="curso__subtitulo">Como hacer embutidos y curados</h5>
-    <h2 class="productos__precio">$155.000</h2>
+    <div class="cuadroblog">
+    <img class="blog__image" src="../Imagenes/Alquimia1.webp" alt="La Alquimia">
+    <h2 class="blog__titulo">Alquimica</h2>
+    <h5 class="blog__subtitulo">La magia y la cocina como actividad originaria</h5>
     <p class="blog__resumen">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, optio. Itaque corporis illo quos harum, mollitia voluptas nihil qui porro temporibus consequatur quam debitis consequuntur recusandae nulla, molestiae iusto! Iure.</p>
-    <a href="#">mas detalles</a>
+    <a href="#">seguir leyendo</a>
     </div>
 
     <div class="cuadroblog">
-    <img class="curso__image" src="./Imagenes/parrillero.webp" alt="Parrillero">
-    <h2 class="curso__titulo">Parrillero</h2>
-    <h5 class="productos__cantidad">16hr</h5>
-    <h5 class="curso__subtitulo">Como asar carne, al carbon y otras parrillas</h5>
-    <h2 class="productos__precio">$85.990</h2>
-    <p class="curso__resumen">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, optio. Itaque corporis illo quos harum, mollitia voluptas nihil qui porro temporibus consequatur quam debitis consequuntur recusandae nulla, molestiae iusto! Iure.</p>
-    <a href="#">mas detalles</a>
+    <img class="blog__image" src="../Imagenes/salmuera.jpg" alt="Salmuera">
+    <h2 class="blog__titulo">Salmueras</h2>
+    <h5 class="blog__subtitulo">Historia y descubrimiento</h5>
+    <p class="blog__resumen">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, optio. Itaque corporis illo quos harum, mollitia voluptas nihil qui porro temporibus consequatur quam debitis consequuntur recusandae nulla, molestiae iusto! Iure.</p>
+    <a href="#">seguir leyendo</a>
     </div>
     
 </section>
@@ -146,6 +140,7 @@
         <div class="footext">
             <h5>DRACARNIS 2023    •  TODOS LOS DERECHOS RESERVADOS</h5>
         </div>
+        
     </footer>
 
 </body>
