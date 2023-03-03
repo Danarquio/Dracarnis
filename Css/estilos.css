@@ -9,28 +9,33 @@
 @font-face {
   font-family: 'AdventPro';
   src: url('../Fuente/AdventPro-Bold.ttf') format('truetype'),
-  font-weight: normal;
-  font-style: normal;
 }
 
 @font-face {
-  font-family: 'Oswald-Regular';
+  font-family: 'OswaldR';
   src: url('../Fuente/Oswald-Regular.ttf') format('truetype'),
-  font-weight: normal;
-  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OswaldM';
+  src: url('../Fuente/Oswald-Medium.ttf') format('truetype'),
+}
+
+@font-face {
+  font-family: 'OswaldB';
+  src: url('../Fuente/Oswald-Bold.ttf') format('truetype'),
 }
 
 
-
 body {
-  font-family: 'MiFuentePersonalizada', sans-serif;
+  font-family: 'OswaldR', sans-serif;
 }
 
 
 
 /* INDEX --------------------------------------------------------------------------*/
 
-/* Menu de Navegacion --------------------------------------------------------------------------*/
+/* Menu de Navegacion -------------------------------------------------------------*/
 .navegador {
 background-color: #000000;
 
@@ -95,7 +100,7 @@ grid-area: logo;
 
 
 
-/* Categorias y Video*/
+/* Categorias --------------------------------------------------------------------------*/
 
 .titulos1 {
     list-style-type: none;
@@ -104,7 +109,7 @@ grid-area: logo;
     margin: 0px;
 
     
-font-family: "oswald";
+font-family: "OswaldR";
 color: white;
 font-size: 35px;
     display: flex;
@@ -120,13 +125,15 @@ margin-right: 100px;
 display: flex;
 flex-direction: row;
 flex-wrap: nowrap;
-font-family: "oswald";
+font-family: "OswaldR";
 color: white;
 font-size: 35px;
 padding: 10px;
 gap: 60px;
 }
 
+
+/* Video Carrusel --------------------------------------------------------------------------*/
 .videocarrusel {
     position: relative;
     background-color: #670000;
@@ -156,7 +163,9 @@ gap: 60px;
     height: auto;
   }
 
-/* Pestañas */
+
+
+/* Pestañas --------------------------------------------------------------------------*/
 
 main {
   background-color: #670000;
@@ -181,6 +190,8 @@ main {
     flex-direction: column;
     gap: 10px;
     width: 25%;
+    align-items: center;
+    justify-content: center;
 
   }
   .card_image {
@@ -192,7 +203,7 @@ justify-content: center;
   .card_text {
     gap: 30px;
     display: flex;
-font-family: "oswald";
+font-family: "OswaldR";
 color: white;
 font-size: 25px;
 align-self: center;
@@ -217,7 +228,7 @@ justify-content: center;
   .card1_text {
     gap: 30px;
     display: flex;
-font-family: "oswald";
+font-family: "OswaldR";
 color: white;
 font-size: 25px;
 align-self: center;
@@ -230,27 +241,31 @@ justify-content: center;
   }
 
 
-  /*TIENDA */
+  /*---------------------------------------------------------------------------------*/
+  /*TIENDA --------------------------------------------------------------------------*/
 
+
+   /*Pestañas delgadas---------------------------------------------------------------*/
   .pestañas {
     background-color: #670000;
     display: flex;
     width: 100%;
-    
   }
 
-  hr {
+  .hrbarra {
     background-color: black;
-    height: 3px;
+    height: 5px;
     border: none;
     width: 100%;
+    margin: 0;
+    opacity: 100%;
  }
 
  
   .card2_text {
     gap: 30px;
     display: flex;
-font-family: "oswald";
+font-family: "OswaldB";
 color: white;
 font-size: 25px;
 align-self: center;
@@ -267,7 +282,7 @@ justify-content: center;
     gap: 6px;
     width: 25%;
     justify-content: center;
-
+align-items: center;
   }
 
   .cardtiendadoble {
@@ -285,9 +300,10 @@ justify-content: center;
 
   .cardtienda_image2 {
     width: 50px; }
-    
-  /*TIENDA - Categorias*/
 
+    
+
+  /*Categorias de Tienda-----------------------------------------------------------*/
 .barra{
   display: flex;
   flex-direction: row;
@@ -313,7 +329,7 @@ justify-content: center;
     padding: 20px;
 
     
-font-family: "oswald";
+font-family: "OswaldR";
 color: black;
 font-size: 25px;
     display: flex;
@@ -332,7 +348,7 @@ font-size: 25px;
     padding: 20px;
 
     
-font-family: "oswald";
+font-family: "OswaldR";
 color: white;
 font-size: 25px;
     display: flex;
@@ -346,7 +362,9 @@ font-size: 25px;
 margin-right: 50px;
 }
 
-  /*TIENDA - buscador*/
+
+
+  /*Buscador Tienda----------------------------------------------------------------*/
 
   .buscador {
     width: 100%;
@@ -361,7 +379,7 @@ margin-right: 50px;
     list-style-type: none;
     padding: 10px;
    gap: 10px;
-font-family: "oswald";
+font-family: "OswaldR";
 color: black;
 font-size: 25px;
     display: flex;
@@ -393,7 +411,9 @@ button[type="submit"] {
   cursor: pointer;
 }
 
-  /*TIENDA - Productos*/
+
+
+  /*Productos de Tienda-------------------------------------------------------------*/
 
 .shop {
   background-color:#99212B;
@@ -423,21 +443,21 @@ button[type="submit"] {
   color: #670000;
   display: flex;
   font-size:50px;
-  font-family: "oswald";
+  font-family: "OswaldB";
 }
 
 .productos__cantidad {
   color: black;
   display: flex;
   font-size:20px;
-  font-family: "oswald";
+  font-family: "OswaldR";
 }
 
 .productos__nombre {
   color: black;
   display: flex;
   font-size:40px;
-  font-family: "oswald";
+  font-family: "OswaldR";
 }
 
 /* FOOTER */
@@ -471,7 +491,7 @@ button[type="submit"] {
 
 .footext {
   color:white;
-  font-family: "oswald";
+  font-family: "OswaldM";
   padding: 30px;
 }
 
@@ -508,21 +528,21 @@ button[type="submit"] {
   color: #670000;
   display: flex;
   font-size:50px;
-  font-family: "oswald";
+  font-family: "AdventPro";
 }
 
 .blog__subtitulo {
   color: black;
   display: flex;
   font-size:20px;
-  font-family: "oswald";
+  font-family: "OswaldM";
 }
 
 .blog__resumen {
   color: black;
   display: flex;
   font-size:20px;
-  font-family: "oswald";
+  font-family: "OswaldR";
 }
 
 /* CURSOS */
@@ -557,21 +577,21 @@ button[type="submit"] {
   color: #670000;
   display: flex;
   font-size:50px;
-  font-family: "oswald";
+  font-family: "AdventPro";
 }
 
 .curso__subtitulo {
   color: black;
   display: flex;
   font-size:30px;
-  font-family: "oswald";
+  font-family: "OswaldB";
 }
 
 .curso__resumen {
   color: black;
   display: flex;
   font-size:20px;
-  font-family: "oswald";
+  font-family: "OswaldR";
 }
 
 /* CONTACTO */
@@ -617,3 +637,48 @@ button[type="submit"] {
   cursor: pointer;
   margin-top: 20px;
 }
+
+
+
+
+
+
+
+
+
+/* 
+MMMMMMMMMMMMMMMMMMMMWX0xoc;'..          ..';coxOXWMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMWKkl;..                         .;lxKWMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMWKd;.                     ',           .;d0NMMMMMMMMMMMMM
+MMMMMMMMMMMXx:.                       ,Od.             .;xXWMMMMMMMMMM
+MMMMMMMMMXd'                         ;0Wd.                'oKWMMMMMMMM
+MMMMMMMXd'                    .,. .,oXMNl ..,;cloooooolc:;'.'oXMMMMMMM
+MMMMMWO,                     ;d;.c0NWMMNOx0XNWMMMMMMMMWKko:.  ,kNMMMMM
+MMMMXo.               .'''';xKkd0WMMMMMWMMMMMMMMMMMMMMWNX0Oxo:,,oXMMMM
+MMMK:                'xXXXXWMWNWMMMMWNXNWMWWMMMMWWWNNNNNNWWMMMNKOKWMMM
+MMK:                :ONMMMMMMWWMMWXK0KNWMWkxKklc:;,'''''',;cldOKWMMMMM
+MX:                '0MMMMMMMKkXMN00KXMMMMXc';.                .;kNMMMM
+No.               ,OWMMMMNkl,cKKOKWMMMMMNo.                    .,lONMM
+O.                ,0WMMW0c'.;xkONMMMMMMMk..:l;.                    'oK
+c                .;kWNK0kdxxxk0WMMMMMMMWkdKWk.    .;ldxkkkdl;.       :
+'             .:kXNMMWNXK000XWMMMMMMMMMMWWMWx..'lOXWMMNOoc;;,.       .
+.          .';OWMMMMMMMMMMMMMMMMMMWNXNMWKk0WWXKNMMWNKx;.              
+       .':xKKXWMMMMMMMMMMMMMMMMWN0kk0NNXKooXMMMWNKkdoc;,.             
+     .ckXNXXXWMMMMMWWNNNNXXXKOxodkXWWMWWN0dkWMN0dollxxOXXkl'          
+    .okd0XNWMWX0kdl:,'''....':dONMMMMMMKd0KONKdolcldOOkOKNWNx'        
+.    .ckNMWX0o,.          .lONMMMMMMMMXc;kOdo:'',,;lxOKXWMMMMK:      .
+;      ;kKOd;.  .''..   'oKWMMMMMMMMWK:..'.        .'oKMMMMMMMK,     ,
+d.      .;:.  .::'    .lKMMMMMMMMWKOo'                ,kWMMMMMWo    .o
+K;           ,l;...,,c0WMMMMMMN0d:.                    'OMMMMMWd.   ,K
+WO.        .od,'cx0XNWMMMNKko:'.                        cNMMMMNl   .kW
+MWx.    .,oOd. .oXWMMMW0l'.                             ;KMMMMO'  .dWM
+MMWx. ..:do,     'lk0K0;                                cNMMMK;  .dNMM
+MMMWk'              ...                                'OMMMK:  .xWMMM
+MMMMM0:.                                              'kWMNk'  ;0WMMMM
+MMMMMMNx'                                            :0WNO:. 'dXMMMMMM
+MMMMMMMMXo'                                        ,xXXx;. .oKWMMMMMMM
+MMMMMMMMMWXd,.                                  .;dOxc.  ,dKWMMMMMMMMM
+MMMMMMMMMMMMNOl'                             ..;cc;.  .ckNMMMMMMMMMMMM
+MMMMMMMMMMMMMMWXOl;.                         ...  .,lkXWMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMWKko:,..                  ..':okKNMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMWX0xl:'..        ..';lx0XWMMMMMMMMMMMMMMMMMMMMMM */
