@@ -8,22 +8,22 @@
 
 @font-face {
   font-family: 'AdventPro';
-  src: url('../Fuente/AdventPro-Bold.ttf') format('truetype'),
+  src: url('./Fuente/AdventPro-Bold.ttf') format('truetype'),
 }
 
 @font-face {
   font-family: 'OswaldR';
-  src: url('../Fuente/Oswald-Regular.ttf') format('truetype'),
+  src: url('./Fuente/Oswald-Regular.ttf') format('truetype'),
 }
 
 @font-face {
   font-family: 'OswaldM';
-  src: url('../Fuente/Oswald-Medium.ttf') format('truetype'),
+  src: url('./Fuente/Oswald-Medium.ttf') format('truetype'),
 }
 
 @font-face {
   font-family: 'OswaldB';
-  src: url('../Fuente/Oswald-Bold.ttf') format('truetype'),
+  src: url('./Fuente/Oswald-Bold.ttf') format('truetype'),
 }
 
 
