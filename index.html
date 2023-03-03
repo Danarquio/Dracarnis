@@ -5,37 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dracarnis</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="./Css/estilos.css">
+    <link rel="stylesheet" href="../Css/estilos.css">
+
+    <link href="../Fuente/AdventPro-Bold.ttf" rel="stylesheet">
+    <link href="../Fuente/Oswald-Regular.ttf" rel="stylesheet">
+    <link href="../Fuente/Oswald-Bold.ttf" rel="stylesheet">
+    <link href="../Fuente/Oswald-Medium.ttf" rel="stylesheet">
+
     <!-- by DANARQUIO -->
+    
 </head>
 <body>
 
-    <!-- BARRA NAVEGACION -->
-    <nav class="navegador">
+<!-- BARRA NAVEGACION ____________________________________________________________________________________________________________-->
+
+  <nav class="navegador">
     
-        <ul class="inicio">
-            <li class="hamburg"><a href=""> 
-                <img  src="./Iconos/hamburger-menu-icon.svg" alt=""> </a></li>
-            <li class="logo1"><a href="./index.html">
+    <ul class="inicio">
+      <li class="hamburg"><a href=""> 
+                <img  src="../Iconos/hamburger-menu-icon.svg" alt=""> </a></li>
+      <li class="logo1"><a href="../index.html">
                 <img  src="../Imagenes/Dracarnis.svg" alt=""> </a></li>
-            <li class="tienda"> <a href="../pages/tienda.html">
+      <li class="tienda"> <a href="../Pages/tienda.html">
                 <img  src="../Iconos/tienda 3.svg"></a></li>
-             <li class="alquimia"><a href="../pages/alquimia.html">
+      <li class="alquimia"><a href="../Pages/alquimia.html">
                 <img  src="../Iconos/alquimia.svg"></a></li>
-             <li class="cursos"><a href="../pages/cursos.html">
+      <li class="cursos"><a href="../Pages/cursos.html">
                 <img  src="../Iconos/cursos 3.svg"></a></li>
-             <li class="servicios"> <a href="#">
+      <li class="servicios"> <a href="#">
                 <img  src="../Iconos/servicios 3.svg"></a></li> 
-             <li class="contactanos"> <a href="../pages/contactanos.html">
+      <li class="contactanos"> <a href="../Pages/contactanos.html">
                 <img  src="../Iconos/contactanos.svg"></a></li>
-        </ul>
-        </nav>
+    </ul>
+  </nav>
     
     
+<!-- CATEGORIAS ________________________________________________________________________________________________________________-->
+
     <div >
         <ul class="titulos1">
-            <a class="titulos1_li" href="../pages/tienda.html">
+            <a class="titulos1_li" href="../Pages/tienda.html">
             <li>CECINAS</li>
             <li>•</li>
             <li>CHARCUTERIA</li>
@@ -48,69 +59,111 @@
     </div>
 
 
-    <!-- CARRUSEL -->
+    <!-- CARRUSEL ________________________________________________________________________________________________________________-->
     
-    <div id="carouselExampleControlsNoTouching" class="carousel slide" 
-    data-bs-touch="false" style="margin-bottom: -6px;">
+    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" style="margin-bottom: -6px;">
+
         <div class="carousel-inner">
+
           <div class="carousel-item active">
-            <video class="videochar" src="../Videos/Draca1.mp4" controls autoplay loop></video>
+          <video class="videochar" src="./Videos/Draca1.mp4" controls autoplay loop></video>
           </div>
+
+
           <div class="carousel-item">
-            <video class="videochar" src="../Videos/Draca2.mp4" controls autoplay loop></video>
-            <!-- d-block w-100 -->
+          <video class="videochar" src="./Videos/Draca2.mp4" controls autoplay loop></video>
           </div>
+
+
           <div class="carousel-item">
-            <video class="videochar" src="../Videos/Draca3.mp4" controls autoplay loop></video>
+          <video class="videochar" src="./Videos/Draca3.mp4" controls autoplay loop></video>
           </div>
+
         </div>
+
+
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+          <span class="visually-hidden"></span>
         </button>
+
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+          <span class="visually-hidden"></span>
         </button>
-        <div class="logodra">
-            <img src="./Imagenes/Dragon.svg" alt="Logo">
-          </div>
-      </div>
 
- <!-- PESTAÑAS -->
+
+        <div class="logodra">
+        <img src="./Imagenes/Dragon.svg" alt="Logo">
+        </div>
+
+    </div>
+
+
+
+ <!-- PESTAÑAS ________________________________________________________________________________________________________________-->
       
 <main class="main" style="margin-top: 0px;border-top-style: solid;border-top-width: 5px;">
     <section class="secciones">
 
-        <a  class="card1" href="../pages/tienda.html">
-   
+        <a  class="card1" href="../Pages/tienda.html">
         <img class="card_image" src="../Iconos/tienda 3.svg" alt="TIENDA">
         <h3 class="card_text" >TIENDA</h3>
         </a>
 
-        <a class="card2" href="../pages/alquimia.html">
-       
+        <a class="card2" href="../Pages/alquimia.html">
         <img class="card_image" src="../Iconos/alquimia.svg" alt="ALQUIMIA">
         <h3 class="card_text" >ALQUIMIA</h3>
         </a>
 
-        <a class="card2" href="../pages/cursos.html">
-      
+        <a class="card2" href="../Pages/cursos.html">
         <img class="card_image" src="../Iconos/cursos 3.svg" alt="CURSOS">
         <h3 class="card_text" >CURSOS</h3>
-      </a>
+        </a>
 
         <a class="card2" href="#">
-   
         <img class="card_image" src="../Iconos/servicios 3.svg" alt="SERVICIOS">
         <h3 class="card_text" >SERVICIOS</h3>
-     </a>
+        </a>
+
     </section>
 </main>
 
 
+<!-- FOOTER ________________________________________________________________________________________________________________-->
+
+<footer class="footer">
+
+  <div class="socialmedia">
+
+      <a href="./contactanos.html" >
+      <img class="socialmedia__icon" src="./Iconos/phone.svg" alt=""></a>
+
+      <a href="https://wa.me/56981815758" target="_blank">
+      <img class="socialmedia__icon" src="./Iconos/whatsapp.svg" alt=""></a>
+
+      <a href="https://www.instagram.com/dracarnis/" target="_blank">
+      <img class="socialmedia__icon" src="./Iconos/instagram.svg" alt=""></a>
+
+      <a href="https://www.facebook.com/Danarquio/" target="_blank">
+      <img class="socialmedia__icon" src="./Iconos/facebook.svg" alt=""></a>
+
+     <a href="https://twitter.com/Danarquio" target="_blank">
+      <img class="socialmedia__icon" src="./Iconos/twitter.svg" alt=""></a>
+
+  </div>
+
+  <div class="footext">
+      <h5>DRACARNIS 2023    •  TODOS LOS DERECHOS RESERVADOS</h5>
+  </div>
+  
+</footer>
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+
 
 </body>
 </html>
