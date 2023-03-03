@@ -13,7 +13,7 @@
 
 @font-face {
   font-family: 'OswaldR';
-  src: url('./Fuente/Oswald-Regular.ttf') format('truetype'),
+  src: url('../Fuente/Oswald-Regular.ttf') format('truetype'),
 }
 
 @font-face {
