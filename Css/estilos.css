@@ -8,26 +8,26 @@
 
 @font-face {
   font-family: "AdventPro";
-  src: url('../Fuente/AdventPro-Bold.woff') format('woff'),
-       url('../Fuente/AdventPro-Bold.woff2') format('woff'),
+  src: url('../Fuente/AdventPro-Bold.woff') format('woff');
+       url('../Fuente/AdventPro-Bold.woff2') format('woff');
 }
 
 @font-face {
   font-family: 'OswaldR';
-  src: url('../Fuente/Oswald-Regular.woff') format('woff'),
-       url('../Fuente/Oswald-Regular.woff2') format('woff2'),
+  src: url('../Fuente/Oswald-Regular.woff') format('woff');
+       url('../Fuente/Oswald-Regular.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'OswaldM';
-  src: url('../Fuente/Oswald-Medium.woff') format('woff'),
-       url('../Fuente/Oswald-Medium.woff2') format('woff2'),
+  src: url('../Fuente/Oswald-Medium.woff') format('woff');
+       url('../Fuente/Oswald-Medium.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'OswaldB';
-  src: url('../Fuente/Oswald-Bold.woff') format('woff'),
-       url('../Fuente/Oswald-Bold.woff2') format('woff2'),
+  src: url('../Fuente/Oswald-Bold.woff') format('woff');
+       url('../Fuente/Oswald-Bold.woff2') format('woff2');
 }
 
 
