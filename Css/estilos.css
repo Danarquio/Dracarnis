@@ -739,6 +739,10 @@ button[type="submit"] {
       margin-right: 0px;
    padding: 5px;
       }
+
+  .col-12 {
+      width: 28%;
+    }
 }
 
   
