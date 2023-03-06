@@ -345,6 +345,9 @@ font-size: 28px;
   .cardtienda_image2 {
     width: 50px; }
 
+    .cardtienda_image3 {
+      display: none;
+          }
     
 
   /*Categorias de Tienda-----------------------------------------------------------*/
@@ -814,7 +817,7 @@ button[type="submit"] {
     }
 
 .cardtienda {
-  padding: 15px;
+  padding: 5px;
   width: 50%;
   border-top-right-radius: 40px;
 }
@@ -826,13 +829,17 @@ button[type="submit"] {
   border-top-left-radius: 40px ;
 
 }
-    .card2 {
-display: none;
+.card2 h3 {
+  display: none;
     }
    
+.cardtienda_image3 {
+  display: flex;
+  width: 60%;
+          }
 
-    .categorias {
-      display: none;
+.categorias {
+  display: none;
     }
 
 .barra {
@@ -859,6 +866,8 @@ display: none;
 .card1 {
   width: 100%;
 }
+
+
 
 .footer {
   display: flex;
@@ -902,6 +911,10 @@ justify-content: center;
 
 .cuadrocurso {
   width: 90%;
+}
+
+.productos{
+  width: 85%;
 }
         }
 
