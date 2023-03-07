@@ -166,13 +166,19 @@ gap: 60px;
     position: absolute;
     left: 40px;
     top: -40px;
+
   }
   
   .logodra img {
     width: 40%;
     height: auto;
+    transition: 0.6s;
   }
 
+  .logodra :hover {
+    transform: rotate(-8deg) scale(110%);
+    transform: ;
+  }
 
 
 /* Pestañas --------------------------------------------------------------------------*/
