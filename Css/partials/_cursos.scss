@@ -1,0 +1,57 @@
+// @Danarquio
+
+.curso {
+    background-color: $secundaryColor ;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+
+    @include mobile {
+        flex-direction: column;
+    }
+
+
+    .cuadrocurso {
+        padding: 25px;
+        display: flex;
+        background-color: #D9D9D9;
+        width: 50%;
+        border-radius: 25px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: left;
+        align-content: left;
+        margin: 20px;
+
+        @include mobile {
+            width: 90%;
+        }
+
+
+        .curso__image {
+            width: 100%;
+            border-radius: 25px;
+        }
+
+        .curso__titulo {
+            color: $mainColor ;
+            display: flex;
+            font-size: 50px;
+            font-family: "AdventPro";
+        }
+
+        .curso__subtitulo {
+            color: black;
+            display: flex;
+            font-size: 30px;
+            font-family: "OswaldB";
+        }
+
+        .curso__resumen {
+            color: black;
+            display: flex;
+            font-size: 20px;
+            font-family: "OswaldR";
+        }
+    }
+}

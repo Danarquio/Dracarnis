@@ -1,0 +1,144 @@
+// @Danarquio
+.titulos1 {
+    list-style-type: none;
+    background-color: $mainColor;
+    padding: 15px;
+    margin: 0px;
+    font-family: "OswaldR";
+    color: white;
+    font-size: 35px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+
+
+    &_li {
+        margin-right: 100px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        font-family: "OswaldR";
+        color: white;
+        font-size: 35px;
+        padding: 10px;
+        gap: 60px;
+
+        @include laptop {
+            font-size: 25px;
+            margin-right: 0px;
+            display: flex;
+            gap: 30px;
+        }
+
+        @include mobile {
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 20px;
+            justify-content: center;
+        }
+
+    }
+
+}
+
+.barra {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    background-color: $secundaryColor;
+    align-items: center;
+
+    @include tablet {
+        justify-content: flex-start;
+    }
+
+    .desplegable {
+        list-style-type: none;
+        padding: 20px;
+        font-family: "OswaldR";
+        color: black;
+        font-size: 25px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: right;
+        align-content: right;
+    }
+
+    .categorias {
+        list-style-type: none;
+        background-color: $secundaryColor;
+        padding: 20px;
+        font-family: "OswaldR";
+        color: white;
+        font-size: 25px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: right;
+        align-content: right;
+
+        @include tablet {
+            display: none;
+        }
+
+        li {
+            margin-right: 50px;
+
+            @include minilaptop {
+                font-size: 25px;
+                margin-right: 0px;
+                display: flex;
+                margin-right: 0px;
+                padding: 5px;
+            }
+        }
+    }
+}
+
+.barraalquimia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #99212B;
+    align-items: center;
+    padding: 10px;
+
+    @include mobile {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+.categorias {
+    list-style-type: none;
+    background-color: $secundaryColor;
+    padding: 20px;
+    font-family: "OswaldR";
+    color: white;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: right;
+    align-content: right;
+
+    li {
+        margin-right: 50px;
+
+        @include minilaptop {
+            font-size: 25px;
+            margin-right: 0px;
+            display: flex;
+            margin-right: 0px;
+            padding: 5px;
+        }
+    }
+}

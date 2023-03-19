@@ -1,0 +1,62 @@
+// @Danarquio
+main {
+    background-color: $mainColor;
+    border: $mainColor;
+    width: 100%;
+
+    .secciones {
+        padding: 0px;
+        display: flex;
+        width: 100%;
+        align-self: center;
+        justify-content: center;
+
+        @include mobile {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card1 {
+            padding: 20px;
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 25%;
+            align-items: center;
+            justify-content: center;
+            transition: 0.5s;
+
+            &:hover {
+                transform: translate(0, -10px);
+                padding: 20px;
+                background-color: $secundaryColor;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                font-family: "OswaldB";
+            }
+
+            @include mobile {
+                width: 100%;
+            }
+
+            .card_image {
+                width: 150px;
+                align-self: center;
+                justify-content: center;
+            }
+
+            .card_text {
+                gap: 30px;
+                display: flex;
+                color: white;
+                font-size: 25px;
+                align-self: center;
+                justify-content: center;
+            }
+        }
+    }
+}

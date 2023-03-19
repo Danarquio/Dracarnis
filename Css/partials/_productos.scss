@@ -1,0 +1,60 @@
+// @Danarquio
+.shop {
+  background-color: $secundaryColor;
+  display: flex;
+  flex-direction: row;
+
+  @include minilaptop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+  .productos {
+    padding: 15px;
+    display: flex;
+    background-color: #D9D9D9;
+    width: 25%;
+    border-radius: 25px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    align-content: center;
+    margin: 20px;
+
+    @include minilaptop {
+      width: 90%;
+    }
+
+    @include mobile {
+      width: 85%;
+    }
+
+
+    &__image {
+      width: 100%;
+      border-radius: 25px;
+    }
+
+    &__precio {
+      color: $mainColor;
+      display: flex;
+      font-size: 50px;
+      font-family: "OswaldB";
+    }
+
+    &__cantidad {
+      color: black;
+      display: flex;
+      font-size: 20px;
+      font-family: "OswaldR";
+    }
+
+    &__nombre {
+      color: black;
+      display: flex;
+      font-size: 40px;
+      font-family: "OswaldR";
+    }
+  }
+}

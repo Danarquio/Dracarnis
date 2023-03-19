@@ -1,0 +1,137 @@
+// @Danarquio
+.pestañas {
+    background-color: $mainColor ;
+    display: flex;
+    width: 100%;
+
+    .cardtienda {
+        padding: 20px;
+        border-top-right-radius: 80px;
+        background-color: $secundaryColor;
+        display: flex;
+        flex-direction: row;
+        gap: 6px;
+        width: 25%;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            font-family: "OswaldB";
+            font-size: 28px;
+        }
+
+        @include tablet {
+            padding: 5px;
+            width: 50%;
+            border-top-right-radius: 40px;
+        }
+
+        ._image2 {
+            width: 50px;
+        }
+    }
+
+    .card2 {
+        padding: 20px;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 25%;
+        align-items: center;
+        justify-content: center;
+        transition: 0.5s;
+
+        &:hover {
+            transform: scale(110%);
+            font-family: "OswaldB";
+        }
+
+        .cardtienda_image3 {
+            display: none;
+
+            @include tablet {
+                display: flex;
+                width: 60%;
+            }
+        }
+
+        h3 {
+            @include tablet {
+                display: none;
+            }
+        }
+
+    }
+
+    .cardtiendadoble {
+        padding: 20px;
+        border-top-right-radius: 60px;
+        border-top-left-radius: 60px;
+        background-color: $secundaryColor;
+        display: flex;
+        flex-direction: row;
+        gap: 6px;
+        width: 25%;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            font-family: "OswaldB";
+            font-size: 28px;
+        }
+
+        @include tablet {
+            padding: 15px;
+            width: 50%;
+            border-top-right-radius: 40px;
+            border-top-left-radius: 40px;
+        }
+    }
+
+    .cardtiendafin {
+        padding: 20px;
+        border-top-left-radius: 60px;
+        background-color: $secundaryColor;
+        display: flex;
+        flex-direction: row;
+        gap: 6px;
+        width: 25%;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            font-family: "OswaldB";
+            font-size: 28px;
+        }
+
+        @include tablet {
+            padding: 15px;
+            width: 50%;
+            border-top-right-radius: 40px;
+            border-top-left-radius: 40px;
+        }
+    }
+
+    .card_text {
+        gap: 30px;
+        display: flex;
+        color: white;
+        font-size: 25px;
+        align-self: center;
+        justify-content: center;
+    }
+
+    .cardtienda_image2 {
+        width: 50px;
+    }
+
+    .cardtienda_image3 {
+        display: none;
+
+        @include tablet {
+            display: flex;
+            width: 60%;
+        }
+    }
+}
