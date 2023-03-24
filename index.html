@@ -65,13 +65,28 @@ MMMMMMMMMMMMMMMMMMMMMMWX0xl:'..        ..';lx0XWMMMMMMMMMMMMMMMMMMMMMM-->
     <nav class="navegador">
 
       <ul class="inicio">
-        <li class="hamburg"><a href="./index.html">
-            <img src="./Iconos/hamburger-menu-icon.svg" alt="menu hamburguesa"> </a></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="./Iconos/hamburger-menu-icon.svg" alt="menu hamburguesa">
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="./index.html">Inicio</a></li>
+            <hr class="dropdown-divider">
+            <li><a class="dropdown-item" href="./Pages/tienda.html">Tienda</a></li>
+            <li><a class="dropdown-item" href="./Pages/alquimia.html">Alquimia</a></li>
+            <li><a class="dropdown-item" href="./Pages/cursos.html">Cursos</a></li>
+            <li><a class="dropdown-item" href="./Pages/servicios.html">Servicios</a></li>
+            <hr class="dropdown-divider">
+            <li><a class="dropdown-item" href="./Pages/contactanos.html">Contactanos</a></li>
+          </ul>
+        </li>
+
         <li class="logo1"><a href="./index.html">
             <img src="./Imagenes/Dracarnis.svg" alt="logotipo dracarnis"> </a></li>
         <li class="tienda , entrada"> <a href="./Pages/tienda.html">
             <img src="./Iconos/tienda 3.svg" alt="icono tienda"></a></li>
-        <li class="alquimia , entrada" ><a href="./Pages/alquimia.html">
+        <li class="alquimia , entrada"><a href="./Pages/alquimia.html">
             <img src="./Iconos/alquimia.svg" alt="icono alquimia"></a></li>
         <li class="cursos , entrada"><a href="./Pages/cursos.html">
             <img src="./Iconos/cursos 3.svg" alt="icono cursos"></a></li>
@@ -84,8 +99,8 @@ MMMMMMMMMMMMMMMMMMMMMMWX0xl:'..        ..';lx0XWMMMMMMMMMMMMMMMMMMMMMM-->
         </li>
       </ul>
     </nav>
-
   </header>
+
   <!-- CATEGORIAS _____________________________________________________________________________-->
 
   <div>
@@ -105,24 +120,24 @@ MMMMMMMMMMMMMMMMMMMMMMWX0xl:'..        ..';lx0XWMMMMMMMMMMMMMMMMMMMMMM-->
 
   <!-- CARRUSEL ____________________________________________________________________________-->
 
-  <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" style="margin-bottom: -6px;">
+  <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-ride="carousel" id="carouselExampleInterval" data-bs-touch="false" style="margin-bottom: -6px;">
 
     <div class="carousel-inner">
-
-      <div class="carousel-item active">
-        <video class="videochar" src="./Videos/Draca1.mp4" controls autoplay loop
+5
+      <div class="carousel-item active" data-bs-interval="11400">
+        <video class="videochar" src="./Videos/Draca1.mp4"  autoplay loop
           title="escenas de cortes de fiambres"></video>
       </div>
 
 
-      <div class="carousel-item">
-        <video class="videochar" src="./Videos/Draca2.mp4" controls autoplay loop
+      <div class="carousel-item" data-bs-interval="13500">
+        <video class="videochar" src="./Videos/Draca2.mp4"  autoplay loop
           title="escenas de condimentado de carne"></video>
       </div>
 
 
-      <div class="carousel-item">
-        <video class="videochar" src="./Videos/Draca3.mp4" controls autoplay loop
+      <div class="carousel-item" data-bs-interval="13000">
+        <video class="videochar" src="./Videos/Draca3.mp4"  autoplay loop
           title="escenas de brasas y chorizos a la parrilla"></video>
       </div>
 
