@@ -392,6 +392,58 @@ main .secciones .card1:hover {
     width: 100%;
   }
 }
+main .secciones .card1 .tiendabre {
+  width: 40%;
+  transition: 1s;
+  transition: -webkit-clip-path 2s;
+  transition: clip-path 2s;
+  transition: clip-path 2s, -webkit-clip-path 2s;
+}
+main .secciones .card1 .tiendabre:hover .cortina1 {
+  display: none;
+}
+main .secciones .card1 .tiendabre:hover .cortina2 {
+  display: none;
+}
+main .secciones .card1 .calderomove {
+  width: 50%;
+}
+main .secciones .card1 .calderomove .palo2 {
+  display: none;
+}
+main .secciones .card1 .calderomove .palo3 {
+  display: none;
+}
+main .secciones .card1 .calderomove:hover .palo {
+  display: none;
+}
+main .secciones .card1 .calderomove:hover .palo3 {
+  display: flex;
+}
+main .secciones .card1 .libraco {
+  width: 50%;
+}
+main .secciones .card1 .libraco .labierto {
+  display: none;
+}
+main .secciones .card1 .libraco:hover .labierto {
+  display: flex;
+}
+main .secciones .card1 .libraco:hover .lcerrado {
+  display: none;
+}
+main .secciones .card1 .llamas {
+  width: 50%;
+}
+main .secciones .card1 .llamas .llamota {
+  display: none;
+}
+main .secciones .card1 .llamas:hover .llamita {
+  display: none;
+}
+main .secciones .card1 .llamas:hover .llamota {
+  display: flex;
+}
 main .secciones .card1 .card_image {
   width: 150px;
   align-self: center;
@@ -708,6 +760,42 @@ main .secciones .card1 .card_text {
   align-items: flex-start;
   align-content: center;
   margin: 20px;
+  transition: 0.5s;
+}
+.shop .productos:hover {
+  transform: scale(102%);
+  box-shadow: 8px 8px 20px rgb(83, 0, 0);
+}
+.shop .productos .vuelta {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.shop .productos .vuelta div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transition: 1s;
+}
+.shop .productos .vuelta .valante {
+  border-radius: 10px;
+  transform: perspective(500px) rotateY(0deg);
+}
+.shop .productos .vuelta .vatras {
+  transform: perspective(500px) rotateY(180deg);
+}
+.shop .productos .vuelta:hover .valante {
+  transform: perspective(500px) rotateY(180deg);
+}
+.shop .productos .vuelta:hover .vatras {
+  transform: perspective(500px) rotateY(360deg);
 }
 @media screen and (max-width: 1056px) {
   .shop .productos {
@@ -716,7 +804,8 @@ main .secciones .card1 .card_text {
 }
 @media screen and (max-width: 650px) {
   .shop .productos {
-    width: 85%;
+    width: 80%;
+    margin: 15px;
   }
 }
 .shop .productos__image {
@@ -729,17 +818,32 @@ main .secciones .card1 .card_text {
   font-size: 50px;
   font-family: "OswaldB";
 }
+@media screen and (max-width: 650px) {
+  .shop .productos__precio {
+    font-size: 40px;
+  }
+}
 .shop .productos__cantidad {
   color: black;
   display: flex;
   font-size: 20px;
   font-family: "OswaldR";
 }
+@media screen and (max-width: 650px) {
+  .shop .productos__cantidad {
+    font-size: 15px;
+  }
+}
 .shop .productos__nombre {
   color: black;
   display: flex;
   font-size: 40px;
   font-family: "OswaldR";
+}
+@media screen and (max-width: 650px) {
+  .shop .productos__nombre {
+    font-size: 30px;
+  }
 }
 
 .blog {
@@ -919,4 +1023,75 @@ main .secciones .card1 .card_text {
   .cuadroblog {
     width: 90%;
   }
+}
+
+.ventanilla {
+  background-color: #99212B;
+  background-image: url(../Imagenes/charcuteria1.svg);
+  background-position: center center;
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+  justify-content: center;
+}
+.ventanilla .cuadroventa {
+  background-color: rgba(34, 34, 34, 0.7);
+  width: 94%;
+  border-radius: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 5fr 1fr;
+  grid-template-areas: "descripcion foto" "precio boton";
+  justify-content: center;
+  padding: 20px;
+}
+.ventanilla .cuadroventa .fotoproducto {
+  height: 200px;
+  width: 100%;
+  border-radius: 25px;
+  grid-area: foto;
+}
+.ventanilla .cuadroventa .fotoproducto img {
+  border-radius: 20px;
+}
+.ventanilla .cuadroventa .botoncompra {
+  grid-area: boton;
+  background-color: #910000;
+  color: #fff;
+  font-size: 24px;
+  border-radius: 4px;
+  margin: 40px;
+  padding: auto;
+}
+.ventanilla .cuadroventa .precioproducto {
+  grid-area: precio;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+}
+.ventanilla .cuadroventa .precioproducto h3 {
+  font-size: 45px;
+  color: white;
+  font-family: "AdventPro";
+}
+.ventanilla .cuadroventa .precioproducto .cantidad__input {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 20px;
+  margin: 0 10px;
+}
+.ventanilla .cuadroventa .descproducto {
+  grid-area: descripcion;
+}
+.ventanilla .cuadroventa .descproducto h2 {
+  color: #910000;
+  font-family: "AdventPro";
+  font-size: 70px;
+}
+.ventanilla .cuadroventa .descproducto h4 {
+  font-family: "Oswald";
+  color: #828282;
+  font-size: 40px;
 }/*# sourceMappingURL=estilachos.css.map */

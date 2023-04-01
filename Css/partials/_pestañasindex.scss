@@ -43,6 +43,73 @@ main {
                 width: 100%;
             }
 
+            .tiendabre {
+                width: 40%;
+                transition: 1s;
+                transition: clip-path 2s;
+
+
+                &:hover .cortina1 {
+                    display: none;
+                }
+
+                &:hover .cortina2 {
+                    display: none;
+                }
+            }
+
+            .calderomove {
+                width: 50%;
+
+                .palo2 {
+                    display: none
+                }
+
+                .palo3 {
+                    display: none
+                }
+
+                &:hover .palo {
+                    display: none;
+                }
+
+                &:hover .palo3 {
+                    display: flex;
+                }
+            }
+
+            .libraco {
+                width: 50%;
+
+                .labierto {
+                    display: none;
+                }
+
+                &:hover .labierto {
+                    display: flex;
+                }
+
+                &:hover .lcerrado {
+                    display: none;
+                }
+            }
+
+            .llamas {
+                width: 50%;
+
+                .llamota {
+                    display: none;
+                }
+
+                &:hover .llamita {
+                    display: none;
+                }
+
+                &:hover .llamota {
+                    display: flex;
+                }
+            }
+
             .card_image {
                 width: 150px;
                 align-self: center;

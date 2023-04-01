@@ -1,0 +1,77 @@
+:root{
+    --clippy: polygon(0 0, 100% 0, 14% 100%, 0% 100%);
+    --clippy2: polygon(0 0, 100% 0, 100% 100%, 89% 100%);
+}
+
+body {
+    background-color: black;
+}
+
+.tiendabre {
+    width: 50%;
+    transition: 1s;
+    transition: clip-path 2s;
+}
+
+.tiendabre:hover .cortina1 {
+clip-path: var(--clippy);
+transition: clip-path 2s;
+}
+
+.tiendabre:hover .cortina2 {
+    clip-path: var(--clippy2);
+    transition: clip-path 2s;
+    }
+
+
+.calderomove {
+width: 50%;
+    }
+
+    .palo2 {
+        display: none
+    }
+.palo3 {
+    display:none
+}
+
+    .calderomove:hover .palo {
+    display: none;
+    }
+
+    .calderomove:hover .palo3 {
+        display: flex;
+    }
+
+    .libraco {
+        width: 50%;
+    }
+
+    .labierto {
+        display: none;
+    }
+
+    .libraco:hover .labierto {
+        display: flex;
+    }
+
+    .libraco:hover .lcerrado {
+        display: none;
+    }
+
+
+    .llamas {
+        width: 50%;
+    }
+
+    .llamota {
+        display: none;
+    }
+
+    .llamas:hover .llamita {
+        display: none;
+    }
+
+    .llamas:hover .llamota {
+        display: flex;
+    }
