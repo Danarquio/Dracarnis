@@ -32,10 +32,27 @@
     .vuelta {
       position: relative;
       width: 100%;
-      height: 420px;
+      height: 400px;
       padding-top: 5px;
       padding-bottom: 5px;
 
+      @include minilaptop {
+        height: 390px;
+      }
+      @include tablet {
+        height: 340px;
+      }
+      @include mobile {
+        height: 220px;
+      }
+      @include mobilesmall {
+        height: 150px;
+      }
+
+      img {
+        width: 100%;
+      border-radius: 25px;
+      }
 
       & div {
         position: absolute;

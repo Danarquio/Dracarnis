@@ -100,10 +100,20 @@
     <!-- CATEGORIAS DE TIENDA____________________________________________________________________-->
     <div class="barra">
 
-        <div class="desplegable">
-            <h3>CATEGORIAS</h3>
-            <img src="../Iconos/🦆 icon _chevron bottom_.svg" alt="flecha desplegable">
-        </div>
+        <li class="nav-item dropdown desplegable">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                CATEGORIAS
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./tienda.html">Tienda</a></li>
+              <hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="#">Curados</a></li>
+              <li><a class="dropdown-item" href="#">Embutidos</a></li>
+              <li><a class="dropdown-item" href="#">Cocidos</a></li>
+              <li><a class="dropdown-item" href="#">Ahumados</a></li>
+              <li><a class="dropdown-item" href="#">Deshidratados</a></li>
+            </ul>
+          </li>
         <ul class="categorias">
             <li>CURADOS</li>
             <li>•</li>
@@ -128,43 +138,28 @@
 
         <div class="cuadroventa">
             <div class="fotoproducto">
-                <div id="carouselExampleControlsNoTouching" class="carousel slide , carrus" data-bs-ride="carousel"
-                    id="carouselExampleInterval" data-bs-touch="false" style="margin-bottom: -6px;">
 
-                    <div class="carousel-inner">
-
-                        <div class="carousel-item active" data-bs-interval="11400">
-                            <img src="../Imagenes/bondiola5.jpg" alt="Bondiola">
-                        </div>
-
-
-                        <div class="carousel-item" data-bs-interval="13500">
-                            <img src="../Imagenes/BONDIOLAITALIA.png" alt="Bondiola">
-                        </div>
-
-
-                        <div class="carousel-item" data-bs-interval="13000">
-                            <img src="../Imagenes/Bondiola.jpg" alt="Bondiola">
-                        </div>
-
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner  , carrus">
+                      <div class="carousel-item active">
+                        <img src="../Imagenes/bondiola5.jpg" class="d-block w-100" data-bs-interval="11400" alt="Bondiola">
+                      </div>
+                      <div class="carousel-item ">
+                        <img src="../Imagenes/BONDIOLAITALIA.png" class="d-block w-100" data-bs-interval="11400" alt="Bondiola">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../Imagenes/Bondiola.jpg" class="d-block w-100" data-bs-interval="11400" alt="Bondiola">
+                      </div>
                     </div>
-
-
-                    <button class="carousel-control-prev" type="button" role="button"
-                        aria-label="Pasar video a la izquierda" data-bs-target="#carouselExampleControlsNoTouching"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden"></span>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
                     </button>
-
-                    <button class="carousel-control-next" type="button" role="button"
-                        aria-label="Pasar video a la derecha" data-bs-target="#carouselExampleControlsNoTouching"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden"></span>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
                     </button>
-
-                </div>
+                  </div>
             </div>
 
             <button class="botoncompra">AGREGAR AL CARRO</button>
