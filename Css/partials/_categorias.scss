@@ -52,6 +52,8 @@
     background-color: $secundaryColor;
     align-items: center;
 
+
+
     @include tablet {
         justify-content: flex-start;
     }
@@ -90,12 +92,19 @@
         li {
             margin-right: 50px;
 
-            @include minilaptop {
-                font-size: 25px;
+            @include laptop {
+                font-size: 24px;
                 margin-right: 0px;
                 display: flex;
                 margin-right: 0px;
                 padding: 5px;
+            }
+            @include minilaptop {
+                font-size: 22px;
+                margin-right: 0px;
+                display: flex;
+                margin-right: 0px;
+                padding: 4px;
             }
         }
     }

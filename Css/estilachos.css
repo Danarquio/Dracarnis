@@ -258,13 +258,22 @@ body {
 .barra .categorias li {
   margin-right: 50px;
 }
-@media screen and (max-width: 1056px) {
+@media screen and (max-width: 1450px) {
   .barra .categorias li {
-    font-size: 25px;
+    font-size: 24px;
     margin-right: 0px;
     display: flex;
     margin-right: 0px;
     padding: 5px;
+  }
+}
+@media screen and (max-width: 1056px) {
+  .barra .categorias li {
+    font-size: 22px;
+    margin-right: 0px;
+    display: flex;
+    margin-right: 0px;
+    padding: 4px;
   }
 }
 
@@ -769,7 +778,7 @@ main .secciones .card1 .card_text {
 .shop .productos .vuelta {
   position: relative;
   width: 100%;
-  height: 320px;
+  height: 420px;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -1043,47 +1052,85 @@ main .secciones .card1 .card_text {
   grid-template-rows: 5fr 1fr;
   grid-template-areas: "descripcion foto" "precio boton";
   justify-content: center;
+  align-items: center;
   padding: 20px;
 }
+@media screen and (max-width: 1056px) {
+  .ventanilla .cuadroventa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .ventanilla .cuadroventa .fotoproducto {
-  height: 200px;
-  width: 100%;
-  border-radius: 25px;
   grid-area: foto;
+}
+.ventanilla .cuadroventa .fotoproducto .carrus {
+  padding: 30px;
 }
 .ventanilla .cuadroventa .fotoproducto img {
   border-radius: 20px;
+  width: 80%;
+  margin-left: 60px;
+}
+@media screen and (max-width: 650px) {
+  .ventanilla .cuadroventa .fotoproducto img {
+    margin-left: 30px;
+  }
 }
 .ventanilla .cuadroventa .botoncompra {
   grid-area: boton;
+  height: 65px;
+  width: 80%;
   background-color: #910000;
   color: #fff;
-  font-size: 24px;
+  font-size: 34px;
   border-radius: 4px;
-  margin: 40px;
-  padding: auto;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  margin-left: 60px;
+}
+@media screen and (max-width: 1056px) {
+  .ventanilla .cuadroventa .botoncompra {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
 }
 .ventanilla .cuadroventa .precioproducto {
   grid-area: precio;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: baseline;
+  align-items: center;
+}
+@media screen and (max-width: 1056px) {
+  .ventanilla .cuadroventa .precioproducto {
+    padding: 10px;
+  }
 }
 .ventanilla .cuadroventa .precioproducto h3 {
-  font-size: 45px;
+  font-size: 65px;
   color: white;
   font-family: "AdventPro";
 }
+@media screen and (max-width: 1056px) {
+  .ventanilla .cuadroventa .precioproducto h3 {
+    margin-right: 30px;
+  }
+}
 .ventanilla .cuadroventa .precioproducto .cantidad__input {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   text-align: center;
-  font-size: 20px;
-  margin: 0 10px;
+  font-size: 28px;
+  margin: 10 10px;
 }
 .ventanilla .cuadroventa .descproducto {
   grid-area: descripcion;
+  padding: 20px;
+  width: 100%;
 }
 .ventanilla .cuadroventa .descproducto h2 {
   color: #910000;
@@ -1091,7 +1138,23 @@ main .secciones .card1 .card_text {
   font-size: 70px;
 }
 .ventanilla .cuadroventa .descproducto h4 {
-  font-family: "Oswald";
+  font-family: "OswaldR";
   color: #828282;
-  font-size: 40px;
+  font-size: 30px;
+}
+.ventanilla .cuadroventa .descproducto hr {
+  border-style: solid;
+  border-color: #9B3232;
+  opacity: 90%;
+  border-width: 2px;
+  width: 100%;
+}
+.ventanilla .cuadroventa .descproducto p {
+  color: white;
+  font-size: 22px;
+  font-family: "OswaldR";
+  width: 80%;
+}
+.ventanilla .cuadroventa .descproducto .indicacion {
+  font-size: 18px;
 }/*# sourceMappingURL=estilachos.css.map */
