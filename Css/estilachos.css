@@ -337,7 +337,7 @@ body {
   top: -40px;
 }
 .logodra img {
-  width: 40%;
+  width: 27%;
   height: auto;
   transition: 0.6s;
 }
@@ -813,8 +813,7 @@ main .secciones .card1 .card_text {
   display: flex;
   align-items: center;
   justify-content: center;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   transition: 1s;
 }
 .shop .productos .vuelta .valante {
